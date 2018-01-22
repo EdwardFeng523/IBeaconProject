@@ -18,6 +18,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var proximity: Int? = nil
     var frequency: Int? = nil
     
+    
     @IBOutlet weak var time: UILabel!
     @IBOutlet var proximityButtons: [UIButton]!
     @IBOutlet var frequencyButtons: [UIButton]!
@@ -26,6 +27,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var frequencyDisplay: UILabel!
     @IBOutlet weak var machineDisplay: UILabel!
     @IBOutlet weak var console: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,8 +60,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
             if button.currentTitle == "Stop" {
                 locationManager.stopRangingBeacons(in: region)
+                for beacon in lastframe {
+                    print ("\(beacon) exists the region of machine" + machineDisplay.text! + " at " + time.text!)
+                }
                 lastframe = []
-                console.text = "Recording stopped"
+                console.text = "Recording stopped, everyone existed"
             }
         }
     }
@@ -162,26 +167,34 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
      *@param: current - the array of doubles representing the minor id of beacons from current frame
      *@param: time - the string representing the current time
      *The function changes the console text to report the change
+     *
+     *!!This is also where you write the data into core data database
+     *
      */
     func compare(lastarray last: [Double]?, with current: [Double], at time: String) {
         //if there wasn't anything back then, directly detect the entrance of beacons
         if last == nil {
             for beacon in current {
                 print("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
+//                record.append("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
                 console.text = "\(beacon) enters the region of machine " + machineDisplay.text! + "at" + time
+                sendStatement()
             }
         } else {
             //if there was something back then, do the comparison to check if there's something new
         for beacon in current {
             if !(last!.contains(beacon)) {
                 print("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
+//                record.append("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
                 console.text = "\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time
+                sendStatement()
             }
         }
             // if there was something back then, do the comparison to check if there's something leaving
         for beacon in last! {
             if !(current.contains(beacon)) {
                 print("\(beacon) exists the region of machine " + machineDisplay.text! + " at " + time)
+//                record.append("\(beacon) exists the region of machine " + machineDisplay.text! + " at " + time)
                 console.text = "\(beacon) exits the region of machine " + machineDisplay.text! + " at " + time
             }
         }

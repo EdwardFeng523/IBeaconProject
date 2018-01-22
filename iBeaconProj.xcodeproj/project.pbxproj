@@ -12,6 +12,27 @@
 		8796F8B32009036100858538 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8796F8B12009036100858538 /* Main.storyboard */; };
 		8796F8B52009036100858538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8796F8B42009036100858538 /* Assets.xcassets */; };
 		8796F8B82009036100858538 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8796F8B62009036100858538 /* LaunchScreen.storyboard */; };
+		87F2DA4B201003B70089F6BC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA4A201003B70089F6BC /* TableViewController.swift */; };
+		87F2DA4D201026A50089F6BC /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA4C201026A50089F6BC /* RegistrationTableViewController.swift */; };
+		87F2DA50201297840089F6BC /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA4F201297840089F6BC /* test.m */; };
+		87F2DA5420129A740089F6BC /* xAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA5320129A740089F6BC /* xAPI.swift */; };
+		87F2DA7A20129FD30089F6BC /* TCAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA5620129FCF0089F6BC /* TCAttachment.m */; };
+		87F2DA7B20129FD30089F6BC /* TCLocalizedValues.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA5720129FCF0089F6BC /* TCLocalizedValues.m */; };
+		87F2DA7C20129FD30089F6BC /* TCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA5920129FCF0089F6BC /* TCError.m */; };
+		87F2DA7D20129FD30089F6BC /* TCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA5B20129FD00089F6BC /* TCUtil.m */; };
+		87F2DA7E20129FD30089F6BC /* TCStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA5C20129FD00089F6BC /* TCStatement.m */; };
+		87F2DA7F20129FD30089F6BC /* TCAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA5D20129FD00089F6BC /* TCAgent.m */; };
+		87F2DA8020129FD30089F6BC /* TCActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA5E20129FD00089F6BC /* TCActivity.m */; };
+		87F2DA8120129FD30089F6BC /* TCLRS.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA6420129FD00089F6BC /* TCLRS.m */; };
+		87F2DA8220129FD30089F6BC /* TCState.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA6620129FD10089F6BC /* TCState.m */; };
+		87F2DA8320129FD30089F6BC /* TCActivityDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA6720129FD10089F6BC /* TCActivityDefinition.m */; };
+		87F2DA8420129FD30089F6BC /* TCVerb.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA6920129FD10089F6BC /* TCVerb.m */; };
+		87F2DA8520129FD30089F6BC /* TCStatementCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA6A20129FD10089F6BC /* TCStatementCollection.m */; };
+		87F2DA8620129FD30089F6BC /* TCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA6B20129FD10089F6BC /* TCContext.m */; };
+		87F2DA8720129FD30089F6BC /* TCQueryOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA7220129FD20089F6BC /* TCQueryOptions.m */; };
+		87F2DA8820129FD30089F6BC /* TCResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA7420129FD20089F6BC /* TCResult.m */; };
+		87F2DA8920129FD30089F6BC /* RSTinCanConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA7720129FD20089F6BC /* RSTinCanConnector.m */; };
+		87F2DA8A20129FD30089F6BC /* TCAttachmentCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA7820129FD30089F6BC /* TCAttachmentCollection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +43,47 @@
 		8796F8B42009036100858538 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8796F8B72009036100858538 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8796F8B92009036100858538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87F2DA4A201003B70089F6BC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		87F2DA4C201026A50089F6BC /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
+		87F2DA4E201297830089F6BC /* iBeaconProj-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iBeaconProj-Bridging-Header.h"; sourceTree = "<group>"; };
+		87F2DA4F201297840089F6BC /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
+		87F2DA5320129A740089F6BC /* xAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xAPI.swift; sourceTree = "<group>"; };
+		87F2DA5620129FCF0089F6BC /* TCAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAttachment.m; sourceTree = "<group>"; };
+		87F2DA5720129FCF0089F6BC /* TCLocalizedValues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLocalizedValues.m; sourceTree = "<group>"; };
+		87F2DA5820129FCF0089F6BC /* TCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCUtil.h; sourceTree = "<group>"; };
+		87F2DA5920129FCF0089F6BC /* TCError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCError.m; sourceTree = "<group>"; };
+		87F2DA5A20129FD00089F6BC /* TCLocalizedValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLocalizedValues.h; sourceTree = "<group>"; };
+		87F2DA5B20129FD00089F6BC /* TCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCUtil.m; sourceTree = "<group>"; };
+		87F2DA5C20129FD00089F6BC /* TCStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCStatement.m; sourceTree = "<group>"; };
+		87F2DA5D20129FD00089F6BC /* TCAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAgent.m; sourceTree = "<group>"; };
+		87F2DA5E20129FD00089F6BC /* TCActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCActivity.m; sourceTree = "<group>"; };
+		87F2DA5F20129FD00089F6BC /* TCState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCState.h; sourceTree = "<group>"; };
+		87F2DA6020129FD00089F6BC /* TCActivityDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCActivityDefinition.h; sourceTree = "<group>"; };
+		87F2DA6120129FD00089F6BC /* TCActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCActivity.h; sourceTree = "<group>"; };
+		87F2DA6220129FD00089F6BC /* TCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCContext.h; sourceTree = "<group>"; };
+		87F2DA6320129FD00089F6BC /* TCError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCError.h; sourceTree = "<group>"; };
+		87F2DA6420129FD00089F6BC /* TCLRS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLRS.m; sourceTree = "<group>"; };
+		87F2DA6520129FD10089F6BC /* TCQueryOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCQueryOptions.h; sourceTree = "<group>"; };
+		87F2DA6620129FD10089F6BC /* TCState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCState.m; sourceTree = "<group>"; };
+		87F2DA6720129FD10089F6BC /* TCActivityDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCActivityDefinition.m; sourceTree = "<group>"; };
+		87F2DA6820129FD10089F6BC /* TCAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAgent.h; sourceTree = "<group>"; };
+		87F2DA6920129FD10089F6BC /* TCVerb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCVerb.m; sourceTree = "<group>"; };
+		87F2DA6A20129FD10089F6BC /* TCStatementCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCStatementCollection.m; sourceTree = "<group>"; };
+		87F2DA6B20129FD10089F6BC /* TCContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCContext.m; sourceTree = "<group>"; };
+		87F2DA6C20129FD10089F6BC /* TCVerb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCVerb.h; sourceTree = "<group>"; };
+		87F2DA6D20129FD10089F6BC /* RSTCAPI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RSTCAPI-Prefix.pch"; sourceTree = "<group>"; };
+		87F2DA6E20129FD10089F6BC /* TCResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCResult.h; sourceTree = "<group>"; };
+		87F2DA6F20129FD20089F6BC /* TCStatementCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCStatementCollection.h; sourceTree = "<group>"; };
+		87F2DA7020129FD20089F6BC /* RSTCAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTCAPI.h; sourceTree = "<group>"; };
+		87F2DA7120129FD20089F6BC /* TCStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCStatement.h; sourceTree = "<group>"; };
+		87F2DA7220129FD20089F6BC /* TCQueryOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCQueryOptions.m; sourceTree = "<group>"; };
+		87F2DA7320129FD20089F6BC /* TCAttachmentCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAttachmentCollection.h; sourceTree = "<group>"; };
+		87F2DA7420129FD20089F6BC /* TCResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCResult.m; sourceTree = "<group>"; };
+		87F2DA7520129FD20089F6BC /* TCLRS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLRS.h; sourceTree = "<group>"; };
+		87F2DA7620129FD20089F6BC /* RSTinCanConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSTinCanConnector.h; sourceTree = "<group>"; };
+		87F2DA7720129FD20089F6BC /* RSTinCanConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSTinCanConnector.m; sourceTree = "<group>"; };
+		87F2DA7820129FD30089F6BC /* TCAttachmentCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCAttachmentCollection.m; sourceTree = "<group>"; };
+		87F2DA7920129FD30089F6BC /* TCAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCAttachment.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +116,63 @@
 		8796F8AC2009036100858538 /* iBeaconProj */ = {
 			isa = PBXGroup;
 			children = (
+				87F2DA5520129FBC0089F6BC /* API */,
+				87F2DA4A201003B70089F6BC /* TableViewController.swift */,
 				8796F8AD2009036100858538 /* AppDelegate.swift */,
 				8796F8AF2009036100858538 /* ViewController.swift */,
+				87F2DA4C201026A50089F6BC /* RegistrationTableViewController.swift */,
 				8796F8B12009036100858538 /* Main.storyboard */,
 				8796F8B42009036100858538 /* Assets.xcassets */,
 				8796F8B62009036100858538 /* LaunchScreen.storyboard */,
 				8796F8B92009036100858538 /* Info.plist */,
+				87F2DA4F201297840089F6BC /* test.m */,
+				87F2DA4E201297830089F6BC /* iBeaconProj-Bridging-Header.h */,
+				87F2DA5320129A740089F6BC /* xAPI.swift */,
 			);
 			path = iBeaconProj;
+			sourceTree = "<group>";
+		};
+		87F2DA5520129FBC0089F6BC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				87F2DA6D20129FD10089F6BC /* RSTCAPI-Prefix.pch */,
+				87F2DA7020129FD20089F6BC /* RSTCAPI.h */,
+				87F2DA7620129FD20089F6BC /* RSTinCanConnector.h */,
+				87F2DA7720129FD20089F6BC /* RSTinCanConnector.m */,
+				87F2DA6120129FD00089F6BC /* TCActivity.h */,
+				87F2DA5E20129FD00089F6BC /* TCActivity.m */,
+				87F2DA6020129FD00089F6BC /* TCActivityDefinition.h */,
+				87F2DA6720129FD10089F6BC /* TCActivityDefinition.m */,
+				87F2DA6820129FD10089F6BC /* TCAgent.h */,
+				87F2DA5D20129FD00089F6BC /* TCAgent.m */,
+				87F2DA7920129FD30089F6BC /* TCAttachment.h */,
+				87F2DA5620129FCF0089F6BC /* TCAttachment.m */,
+				87F2DA7320129FD20089F6BC /* TCAttachmentCollection.h */,
+				87F2DA7820129FD30089F6BC /* TCAttachmentCollection.m */,
+				87F2DA6220129FD00089F6BC /* TCContext.h */,
+				87F2DA6B20129FD10089F6BC /* TCContext.m */,
+				87F2DA6320129FD00089F6BC /* TCError.h */,
+				87F2DA5920129FCF0089F6BC /* TCError.m */,
+				87F2DA5A20129FD00089F6BC /* TCLocalizedValues.h */,
+				87F2DA5720129FCF0089F6BC /* TCLocalizedValues.m */,
+				87F2DA7520129FD20089F6BC /* TCLRS.h */,
+				87F2DA6420129FD00089F6BC /* TCLRS.m */,
+				87F2DA6520129FD10089F6BC /* TCQueryOptions.h */,
+				87F2DA7220129FD20089F6BC /* TCQueryOptions.m */,
+				87F2DA6E20129FD10089F6BC /* TCResult.h */,
+				87F2DA7420129FD20089F6BC /* TCResult.m */,
+				87F2DA5F20129FD00089F6BC /* TCState.h */,
+				87F2DA6620129FD10089F6BC /* TCState.m */,
+				87F2DA7120129FD20089F6BC /* TCStatement.h */,
+				87F2DA5C20129FD00089F6BC /* TCStatement.m */,
+				87F2DA6F20129FD20089F6BC /* TCStatementCollection.h */,
+				87F2DA6A20129FD10089F6BC /* TCStatementCollection.m */,
+				87F2DA5820129FCF0089F6BC /* TCUtil.h */,
+				87F2DA5B20129FD00089F6BC /* TCUtil.m */,
+				87F2DA6C20129FD10089F6BC /* TCVerb.h */,
+				87F2DA6920129FD10089F6BC /* TCVerb.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +207,7 @@
 				TargetAttributes = {
 					8796F8A92009036100858538 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +248,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F2DA8020129FD30089F6BC /* TCActivity.m in Sources */,
+				87F2DA8920129FD30089F6BC /* RSTinCanConnector.m in Sources */,
+				87F2DA7D20129FD30089F6BC /* TCUtil.m in Sources */,
+				87F2DA50201297840089F6BC /* test.m in Sources */,
+				87F2DA5420129A740089F6BC /* xAPI.swift in Sources */,
+				87F2DA8620129FD30089F6BC /* TCContext.m in Sources */,
 				8796F8B02009036100858538 /* ViewController.swift in Sources */,
+				87F2DA4B201003B70089F6BC /* TableViewController.swift in Sources */,
+				87F2DA8420129FD30089F6BC /* TCVerb.m in Sources */,
+				87F2DA7C20129FD30089F6BC /* TCError.m in Sources */,
+				87F2DA8220129FD30089F6BC /* TCState.m in Sources */,
+				87F2DA7B20129FD30089F6BC /* TCLocalizedValues.m in Sources */,
+				87F2DA8A20129FD30089F6BC /* TCAttachmentCollection.m in Sources */,
+				87F2DA7E20129FD30089F6BC /* TCStatement.m in Sources */,
+				87F2DA4D201026A50089F6BC /* RegistrationTableViewController.swift in Sources */,
+				87F2DA8520129FD30089F6BC /* TCStatementCollection.m in Sources */,
 				8796F8AE2009036100858538 /* AppDelegate.swift in Sources */,
+				87F2DA7F20129FD30089F6BC /* TCAgent.m in Sources */,
+				87F2DA8820129FD30089F6BC /* TCResult.m in Sources */,
+				87F2DA8720129FD30089F6BC /* TCQueryOptions.m in Sources */,
+				87F2DA8120129FD30089F6BC /* TCLRS.m in Sources */,
+				87F2DA8320129FD30089F6BC /* TCActivityDefinition.m in Sources */,
+				87F2DA7A20129FD30089F6BC /* TCAttachment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +407,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZWTD7QCCNV;
 				INFOPLIST_FILE = iBeaconProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = beacon.jf44.iBeaconProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iBeaconProj/iBeaconProj-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +425,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZWTD7QCCNV;
 				INFOPLIST_FILE = iBeaconProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = beacon.jf44.iBeaconProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iBeaconProj/iBeaconProj-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
