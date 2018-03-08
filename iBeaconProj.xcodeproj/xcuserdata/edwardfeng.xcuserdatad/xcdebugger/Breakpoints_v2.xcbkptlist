@@ -6,17 +6,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iBeaconProj/ViewController.swift"
-            timestampString = "538092510.594591"
+            timestampString = "539891989.950896"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "181"
-            endingLineNumber = "181"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
             landmarkName = "compare(lastarray:with:at:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iBeaconProj.ViewController.compare(lastarray: Swift.Optional&lt;Swift.Array&lt;Swift.Double&gt;&gt;, with: Swift.Array&lt;Swift.Double&gt;, at: Swift.String) -&gt; ()"
+                  moduleName = "iBeaconProj"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edwardfeng/Documents/iBeaconProject/iBeaconProj/iBeaconProj/ViewController.swift"
+                  timestampString = "539819707.052057"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "2772">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 : @autoclosure () throws -&gt; Swift.String in iBeaconProj.ViewController.compare(lastarray: Swift.Optional&lt;Swift.Array&lt;Swift.Double&gt;&gt;, with: Swift.Array&lt;Swift.Double&gt;, at: Swift.String) -&gt; ()"
+                  moduleName = "iBeaconProj"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edwardfeng/Documents/iBeaconProject/iBeaconProj/iBeaconProj/ViewController.swift"
+                  timestampString = "539819707.056564"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

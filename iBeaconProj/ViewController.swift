@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreLocation
+import CoreData
 
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
@@ -18,7 +19,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var proximity: Int? = nil
     var frequency: Int? = nil
     
-    
     @IBOutlet weak var time: UILabel!
     @IBOutlet var proximityButtons: [UIButton]!
     @IBOutlet var frequencyButtons: [UIButton]!
@@ -28,6 +28,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var machineDisplay: UILabel!
     @IBOutlet weak var console: UILabel!
     
+    var nameMap = [33.0: "Edward"]
+    
+    var emailMap = [33.0: "mailto:jf44@rice.edu"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +64,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             if button.currentTitle == "Stop" {
                 locationManager.stopRangingBeacons(in: region)
                 for beacon in lastframe {
-                    print ("\(beacon) exists the region of machine" + machineDisplay.text! + " at " + time.text!)
+                    let person = nameMap[beacon] ?? "unknown"
+                    let mail = emailMap[beacon] ?? "unknown"
+                    let text = person + " exists the region of machine" + machineDisplay.text! + " at " + time.text!
+                    ViewController.updateDatabase(text: text, entered: false, name: person, mail: mail, region: machineDisplay.text!, time: time.text!, sent: true)
+                    sendStatement(entered: false, name: person, mail: emailMap[beacon] ?? "unknown", zone: machineDisplay.text!, at: time.text!)
                 }
                 lastframe = []
                 console.text = "Recording stopped, everyone existed"
@@ -161,6 +168,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
+    static func updateDatabase(text: String, entered: Bool, name: String, mail: String, region: String, time: String, sent: Bool) {
+        let record = Record(context: PersistenceService.context)
+        record.text = text
+        record.entered = entered
+        record.person = name
+        record.mail = mail
+        record.region = region
+        record.time = time
+        PersistenceService.saveContext()
+    }
+    
     /**
      *The comparison method, compares the beacons from last fram with that of this frame see if there's any change
      *@param: last - the array of doubles representing the minor id of beacons from last frame
@@ -176,28 +194,35 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         if last == nil {
             for beacon in current {
                 print("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
-//                record.append("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
-                console.text = "\(beacon) enters the region of machine " + machineDisplay.text! + "at" + time
-                sendStatement()
+                let person = nameMap[beacon] ?? "unknown"
+                let text = person + " enters the region of machine " + machineDisplay.text! + "at" + time
+                console.text = text
+                sendStatement(entered: true, name: person, mail: emailMap[beacon] ?? "unknown", zone: machineDisplay.text!, at: time)
+                ViewController.updateDatabase(text: text, entered: true, name: person, mail: emailMap[beacon] ?? "unknown", region: machineDisplay.text!, time: time, sent: true)
             }
         } else {
             //if there was something back then, do the comparison to check if there's something new
-        for beacon in current {
-            if !(last!.contains(beacon)) {
-                print("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
-//                record.append("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
-                console.text = "\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time
-                sendStatement()
+            for beacon in current {
+                if !(last!.contains(beacon)) {
+                    print("\(beacon) enters the region of machine " + machineDisplay.text! + " at " + time)
+                    let person = nameMap[beacon] ?? "unknown"
+                    let text = person + " enters the region of machine " + machineDisplay.text! + " at " + time
+                    console.text = text
+                    sendStatement(entered: true, name: person, mail: emailMap[beacon] ?? "unknown", zone: machineDisplay.text!, at: time)
+                    ViewController.updateDatabase(text: text, entered: true, name: person, mail: emailMap[beacon] ?? "unknown", region: machineDisplay.text!, time: time, sent: true)
+                }
             }
-        }
             // if there was something back then, do the comparison to check if there's something leaving
-        for beacon in last! {
-            if !(current.contains(beacon)) {
-                print("\(beacon) exists the region of machine " + machineDisplay.text! + " at " + time)
-//                record.append("\(beacon) exists the region of machine " + machineDisplay.text! + " at " + time)
-                console.text = "\(beacon) exits the region of machine " + machineDisplay.text! + " at " + time
+            for beacon in last! {
+                if !(current.contains(beacon)) {
+                    print("\(beacon) exists the region of machine " + machineDisplay.text! + " at " + time)
+                    let person = nameMap[beacon] ?? "unknown"
+                    let text = person + " exits the region of machine " + machineDisplay.text! + " at " + time
+                    console.text = text
+                    sendStatement(entered: false, name: person, mail: emailMap[beacon] ?? "unknown", zone: machineDisplay.text!, at: time)
+                    ViewController.updateDatabase(text: text, entered: false, name: person, mail: emailMap[beacon] ?? "unknown", region: machineDisplay.text!, time: time, sent: true)
+                }
             }
-        }
         }
     }
     
